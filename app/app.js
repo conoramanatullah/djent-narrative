@@ -2,7 +2,9 @@
   angular.module('Djent', ['ngMaterial'])
 
   .controller('MainController', function($scope){
-
+    $scope.startDjent = function() {
+      console.log("lets djent");
+    };
   })
 
   .directive('openTools', function() {

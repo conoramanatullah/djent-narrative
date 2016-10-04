@@ -16,14 +16,16 @@
 <body id="djent" ng-app="Djent" ng-controller="MainController" ng-cloak>
 
   <div class="djent-page-content" layout="row" layout-xs="column" layout-sm="column">
-    <div class="djent-left md-whiteframe-z1"  flex="25" flex-xs="20" flex-sm="20">
-      start
+    <div class="djent-left md-whiteframe-z1"  flex="25" flex-xs="20" flex-sm="20" layout="column">
+
+      <div id="djent-start-button" ng-click="startDjent()" md-ink-ripple="#FFFFFF">
+        start
+      </div>
 
 
       <div id="tools-bar" open-tools>
-        <div class="header md-whiteframe-z4" layout="row" md-ink-ripple="#FFFFFF">
+        <div class="header md-whiteframe-z2" layout="row" md-ink-ripple="#FFFFFF">
           <span class="text">
-            <!-- <i class="material-icons">view_headline</i> -->
             ABOUT
           </span>
           <span flex></span>
@@ -31,7 +33,7 @@
         </div>
         <div class="content">
           <div class="">
-            hello there
+
           </div>
         </div>
       </div>
@@ -39,10 +41,10 @@
     <div class="djent-right md-whiteframe-z4" flex>
       <div class="djent-text-center">
         <div id="djent-large-text">
-          djent.
+          djent
         </div>
         <div id="djent-small-text">
-          A history of the genre
+          a history of the genre
         </div>
       </div>
     </div>

@@ -51,9 +51,25 @@ $break-xl : 1920px;
       position: relative;
       background-color: $bgDark;
       height: 100%;
+      text-align: center;
 
       #djent-start-button {
-
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        cursor: pointer;
+        padding-top: 100%;
+        color: white;
+        font-size: 6em;
+        font-weight: 200;
+        height:100%;
+        @include sm {
+          padding-top: 30px;
+          font-size: 4em;
+        }
+        &:focus {
+          outline: none;
+          border: 0;
+        }
       }
 
       #tools-bar {
@@ -76,6 +92,8 @@ $break-xl : 1920px;
           text-align: center;
           color: white;
           .text {
+            -moz-user-select: none;
+            -webkit-user-select: none;
             padding-left: 15px;
             padding-top: 6px;
             position:relative;
@@ -101,12 +119,14 @@ $break-xl : 1920px;
     .djent-right {
       background-color: $bgLight;
       height: 100%;
-
+      -moz-user-select: none;
+      -webkit-user-select: none;
       .djent-text-center {
         text-align: center;
         padding-top: 30%;
         padding-bottom: 20%;
         #djent-large-text {
+
           text-shadow: 3px 3px $bgMedium;
           font-size: 10em;
           color: $accentPrimary;
@@ -117,6 +137,7 @@ $break-xl : 1920px;
 
         }
         #djent-small-text {
+          font-weight: 300;
           font-size: 1.5em;
           color: $bgDark;
         }
