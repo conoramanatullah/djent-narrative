@@ -1,0 +1,21 @@
+{
+  "name": "FWDproject1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "babel-cli": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "fullpage.js": "^2.8.6",
+    "jquery": "^3.1.1",
+    "webpack": "^1.13.2"
+  }
+}
