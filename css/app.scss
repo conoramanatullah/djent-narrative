@@ -6,15 +6,15 @@ $bgLight        : #BDD4DE;
 $accentLight    : #EFEFEF;
 $accentPrimary  : #FF530D;
 // *************************************
-$break-xs : 600px;
-$break-gt-xs : 600px;
-$break-sm : 960px;
-$break-gt-sm : 960px;
-$break-md : 1280px;
-$break-gt-md : 1280px;
-$break-lg : 1920px;
-$break-gt-lg : 1920px;
-$break-xl : 1920px;
+$break-xs       : 600px;
+$break-gt-xs    : 600px;
+$break-sm       : 960px;
+$break-gt-sm    : 960px;
+$break-md       : 1280px;
+$break-gt-md    : 1280px;
+$break-lg       : 1920px;
+$break-gt-lg    : 1920px;
+$break-xl       : 1920px;
 // *************************************
 @mixin xs {
   @media (max-width: #{$break-xs - 1px}) {
@@ -41,7 +41,19 @@ $break-xl : 1920px;
     @content;
   }
 }
+html {
+  body {
+    overflow: hidden;
+  }
+}
 
+.animate-if.ng-enter, .animate-if.ng-leave {
+    -webkit-transition: 1s linear all;
+    -moz-transition: 1s linear all;
+    -ms-transition: 1s linear all;
+    -o-transition: 1s linear all;
+    transition: 1s linear all;
+}
 
 #djent {
   .djent-page-content {

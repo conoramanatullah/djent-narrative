@@ -1,3 +1,13 @@
+html body {
+  overflow: hidden; }
+
+.animate-if.ng-enter, .animate-if.ng-leave {
+  -webkit-transition: 1s linear all;
+  -moz-transition: 1s linear all;
+  -ms-transition: 1s linear all;
+  -o-transition: 1s linear all;
+  transition: 1s linear all; }
+
 #djent .djent-page-content {
   height: 100vh; }
   #djent .djent-page-content .djent-left {

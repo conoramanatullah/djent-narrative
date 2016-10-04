@@ -1,10 +1,20 @@
 (function(){
-  angular.module('Djent', ['ngMaterial'])
+  angular.module('Djent', ['ngMaterial', 'ngAnimate'])
 
   .controller('MainController', function($scope){
+
+    $scope.pageIndex = 1;
+    $scope.start = "start";
+    //
     $scope.startDjent = function() {
-      console.log("lets djent");
+      // $('#page2').addClass('fade');
+      $scope.pageIndex = 2;
+      $scope.start = "next";
+      console.log("lets djent " + $scope.pageIndex);
     };
+
+
+
   })
 
   .directive('openTools', function() {
