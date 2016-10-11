@@ -1,0 +1,165 @@
+
+// *************************************
+$bgDark         : #2B3A42;
+$bgMedium       : #3F5765;
+$bgLight        : #BDD4DE;
+$accentLight    : #EFEFEF;
+$accentPrimary  : #FF530D;
+// *************************************
+$break-xs       : 600px;
+$break-gt-xs    : 600px;
+$break-sm       : 960px;
+$break-gt-sm    : 960px;
+$break-md       : 1280px;
+$break-gt-md    : 1280px;
+$break-lg       : 1920px;
+$break-gt-lg    : 1920px;
+$break-xl       : 1920px;
+// *************************************
+@mixin xs {
+  @media (max-width: #{$break-xs - 1px}) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: #{$break-sm - 1px}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: #{$break-md - 1px}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: #{$break-lg - 1px}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (max-width: #{$break-xl - 1px}) {
+    @content;
+  }
+}
+html {
+  body {
+    overflow: hidden;
+  }
+}
+
+.animate-if.ng-enter, .animate-if.ng-leave {
+    -webkit-transition: 1s linear all;
+    -moz-transition: 1s linear all;
+    -ms-transition: 1s linear all;
+    -o-transition: 1s linear all;
+    transition: 1s linear all;
+}
+
+#djent {
+  .djent-page-content {
+    height: 100vh;
+    .djent-left {
+      overflow: hidden;
+      position: relative;
+      background-color: $bgDark;
+      height: 100%;
+      text-align: center;
+
+      #djent-start-button {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        cursor: pointer;
+        padding-top: 100%;
+        color: white;
+        font-size: 4em;
+        font-weight: 200;
+        height:100%;
+        @include sm {
+          padding-top: 30px;
+          font-size: 4em;
+        }
+
+        &:focus {
+          outline: none;
+          border: 0;
+        }
+        i {
+          font-size: 1em;
+          vertical-align: middle;
+        }
+      }
+
+      #tools-bar {
+        cursor: pointer;
+        background-color: $bgMedium;
+        height: 20vh;
+        position: absolute;
+        bottom: -15vh;
+        width: 100%;
+        -webkit-transition: all 170ms ease-in;
+        -moz-transition: all 170ms ease-in;
+        -ms-transition: all 170ms ease-in;
+        -o-transition: all 170ms ease-in;
+        transition: all 170ms ease-in;
+        .header {
+          width: 100%;
+          height: 5vh;
+          background-color: $accentPrimary;
+          font-size: 16px;
+          text-align: center;
+          color: white;
+          .text {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            padding-left: 15px;
+            padding-top: 6px;
+            position:relative;
+            top: calc(50% - 15px);
+            display: inline-block;
+            i {
+              padding-left: 15px;
+              top: calc(50% - 15px);
+            }
+          }
+        }
+        .content {
+          color: white;
+          width: 100%;
+          height: 15vh;
+          background-color: $bgDark;
+        }
+      }
+      .menu-open {
+        bottom: 0;
+      }
+    }
+    .djent-right {
+      background-color: $bgLight;
+      height: 100%;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      .djent-text-center {
+        text-align: center;
+        padding-top: 30%;
+        padding-bottom: 20%;
+        #djent-large-text {
+
+          text-shadow: 3px 3px $bgMedium;
+          font-size: 10em;
+          color: $accentPrimary;
+
+          @include sm {
+            font-size: 7em;
+          }
+
+        }
+        #djent-small-text {
+          font-weight: 300;
+          font-size: 1.5em;
+          color: $bgDark;
+        }
+
+      }
+    }
+  }
+}

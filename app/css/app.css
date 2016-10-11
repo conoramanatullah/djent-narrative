@@ -1,0 +1,94 @@
+html body {
+  overflow: hidden; }
+
+.animate-if.ng-enter, .animate-if.ng-leave {
+  -webkit-transition: 1s linear all;
+  -moz-transition: 1s linear all;
+  -ms-transition: 1s linear all;
+  -o-transition: 1s linear all;
+  transition: 1s linear all; }
+
+#djent .djent-page-content {
+  height: 100vh; }
+  #djent .djent-page-content .djent-left {
+    overflow: hidden;
+    position: relative;
+    background-color: #2B3A42;
+    height: 100%;
+    text-align: center; }
+    #djent .djent-page-content .djent-left #djent-start-button {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      cursor: pointer;
+      padding-top: 100%;
+      color: white;
+      font-size: 4em;
+      font-weight: 200;
+      height: 100%; }
+      @media (max-width: 959px) {
+        #djent .djent-page-content .djent-left #djent-start-button {
+          padding-top: 30px;
+          font-size: 4em; } }
+      #djent .djent-page-content .djent-left #djent-start-button:focus {
+        outline: none;
+        border: 0; }
+      #djent .djent-page-content .djent-left #djent-start-button i {
+        font-size: 1em;
+        vertical-align: middle; }
+    #djent .djent-page-content .djent-left #tools-bar {
+      cursor: pointer;
+      background-color: #3F5765;
+      height: 20vh;
+      position: absolute;
+      bottom: -15vh;
+      width: 100%;
+      -webkit-transition: all 170ms ease-in;
+      -moz-transition: all 170ms ease-in;
+      -ms-transition: all 170ms ease-in;
+      -o-transition: all 170ms ease-in;
+      transition: all 170ms ease-in; }
+      #djent .djent-page-content .djent-left #tools-bar .header {
+        width: 100%;
+        height: 5vh;
+        background-color: #FF530D;
+        font-size: 16px;
+        text-align: center;
+        color: white; }
+        #djent .djent-page-content .djent-left #tools-bar .header .text {
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          padding-left: 15px;
+          padding-top: 6px;
+          position: relative;
+          top: calc(50% - 15px);
+          display: inline-block; }
+          #djent .djent-page-content .djent-left #tools-bar .header .text i {
+            padding-left: 15px;
+            top: calc(50% - 15px); }
+      #djent .djent-page-content .djent-left #tools-bar .content {
+        color: white;
+        width: 100%;
+        height: 15vh;
+        background-color: #2B3A42; }
+    #djent .djent-page-content .djent-left .menu-open {
+      bottom: 0; }
+  #djent .djent-page-content .djent-right {
+    background-color: #BDD4DE;
+    height: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none; }
+    #djent .djent-page-content .djent-right .djent-text-center {
+      text-align: center;
+      padding-top: 30%;
+      padding-bottom: 20%; }
+      #djent .djent-page-content .djent-right .djent-text-center #djent-large-text {
+        text-shadow: 3px 3px #3F5765;
+        font-size: 10em;
+        color: #FF530D; }
+        @media (max-width: 959px) {
+          #djent .djent-page-content .djent-right .djent-text-center #djent-large-text {
+            font-size: 7em; } }
+      #djent .djent-page-content .djent-right .djent-text-center #djent-small-text {
+        font-weight: 300;
+        font-size: 1.5em;
+        color: #2B3A42; }
