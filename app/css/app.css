@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html body {
   overflow: hidden; }
+  @media (max-width: 599px) {
+    html body {
+      overflow: auto; } }
 
 .animate-if.ng-enter, .animate-if.ng-leave {
   -webkit-transition: 1s linear all;
@@ -47,6 +51,9 @@ html body {
       -ms-transition: all 170ms ease-in;
       -o-transition: all 170ms ease-in;
       transition: all 170ms ease-in; }
+      @media (max-width: 599px) {
+        #djent .djent-page-content .djent-left #tools-bar {
+          display: none; } }
       #djent .djent-page-content .djent-left #tools-bar .header {
         width: 100%;
         height: 5vh;
@@ -66,6 +73,10 @@ html body {
             padding-left: 15px;
             top: calc(50% - 15px); }
       #djent .djent-page-content .djent-left #tools-bar .content {
+        padding: 20px;
+        text-align: left;
+        font-weight: 300;
+        font-size: 1em;
         color: white;
         width: 100%;
         height: 15vh;
@@ -77,6 +88,8 @@ html body {
     height: 100%;
     -moz-user-select: none;
     -webkit-user-select: none; }
+    #djent .djent-page-content .djent-right-dark {
+      background-color: #2B3A42; }
     #djent .djent-page-content .djent-right .djent-text-center {
       text-align: center;
       padding-top: 30%;
@@ -85,6 +98,9 @@ html body {
         text-shadow: 3px 3px #3F5765;
         font-size: 10em;
         color: #FF530D; }
+        #djent .djent-page-content .djent-right .djent-text-center #djent-large-text:focus {
+          outline: none;
+          border: 0; }
         @media (max-width: 959px) {
           #djent .djent-page-content .djent-right .djent-text-center #djent-large-text {
             font-size: 7em; } }
@@ -92,3 +108,159 @@ html body {
         font-weight: 300;
         font-size: 1.5em;
         color: #2B3A42; }
+
+#page-two {
+  overflow: auto;
+  color: white;
+  background-color: #3F5765;
+  height: 100vh; }
+  #page-two h1 {
+    padding-left: 20px;
+    font-size: 5em;
+    font-weight: 200; }
+    @media (max-width: 599px) {
+      #page-two h1 {
+        font-size: 2em; } }
+  #page-two h2 {
+    padding-left: 20px;
+    font-size: 1.5em;
+    font-weight: 200; }
+    @media (max-width: 599px) {
+      #page-two h2 {
+        font-size: 1em; } }
+  #page-two p {
+    font-size: 1.5em;
+    font-weight: 200;
+    padding-left: 20px; }
+  #page-two md-grid-list md-grid-tile img {
+    transition: all 0.5s ease;
+    max-width: 100%; }
+    #page-two md-grid-list md-grid-tile img:hover {
+      cursor: pointer;
+      max-width: 110%; }
+
+#page-three {
+  overflow: auto;
+  color: white;
+  background-color: #3F5765;
+  height: 100vh; }
+  #page-three h1 {
+    padding-left: 20px;
+    font-size: 5em;
+    font-weight: 200; }
+    @media (max-width: 599px) {
+      #page-three h1 {
+        font-size: 2em; } }
+  #page-three h2 {
+    padding-left: 20px;
+    font-size: 1.5em;
+    font-weight: 200; }
+    @media (max-width: 599px) {
+      #page-three h2 {
+        font-size: 1em; } }
+  #page-three p {
+    font-size: 1.5em;
+    font-weight: 200;
+    padding-left: 20px; }
+  #page-three h2 {
+    font-size: 2em;
+    font-weight: 300; }
+  #page-three .description {
+    width: 30vw; }
+    @media (max-width: 599px) {
+      #page-three .description {
+        width: 80vw; } }
+  #page-three md-button {
+    margin-left: 20px; }
+
+#page-four {
+  overflow: auto;
+  color: white;
+  background-color: #3F5765;
+  height: 100vh; }
+  #page-four h1 {
+    padding-left: 20px;
+    font-size: 5em;
+    font-weight: 200; }
+    @media (max-width: 599px) {
+      #page-four h1 {
+        font-size: 2em; } }
+  #page-four h2 {
+    padding-left: 20px;
+    font-size: 1.5em;
+    font-weight: 200; }
+    @media (max-width: 599px) {
+      #page-four h2 {
+        font-size: 1em; } }
+  #page-four p {
+    font-size: 1.5em;
+    font-weight: 200;
+    padding-left: 20px; }
+  #page-four h2 {
+    font-size: 2em;
+    font-weight: 300; }
+  #page-four .description {
+    width: 30vw; }
+    @media (max-width: 599px) {
+      #page-four .description {
+        width: 80vw; } }
+  #page-four md-button {
+    margin-left: 20px; }
+  #page-four md-grid-tile:focus {
+    outline: none;
+    border: 0; }
+  #page-four md-grid-tile:hover {
+    cursor: pointer; }
+  #page-four md-grid-tile img {
+    max-width: 100%; }
+
+#page-five {
+  overflow: auto;
+  color: white;
+  background-color: #3F5765;
+  height: 100vh; }
+  #page-five h1 {
+    padding-left: 20px;
+    font-size: 5em;
+    font-weight: 200; }
+    @media (max-width: 599px) {
+      #page-five h1 {
+        font-size: 2em; } }
+  #page-five h2 {
+    padding-left: 20px;
+    font-size: 1.5em;
+    font-weight: 200; }
+    @media (max-width: 599px) {
+      #page-five h2 {
+        font-size: 1em; } }
+  #page-five p {
+    font-size: 1.5em;
+    font-weight: 200;
+    padding-left: 20px; }
+  #page-five p {
+    width: 50vw; }
+    @media (max-width: 959px) {
+      #page-five p {
+        width: 80vw; } }
+    @media (max-width: 599px) {
+      #page-five p {
+        width: 80vw; } }
+
+#page-six {
+  background-color: #BDD4DE;
+  text-align: center;
+  padding-top: 30%;
+  padding-bottom: 20%; }
+  #page-six #djent-large-text {
+    text-shadow: 3px 3px #3F5765;
+    font-size: 10em;
+    color: #FF530D; }
+    #page-six #djent-large-text:focus {
+      outline: none;
+      border: 0; }
+    @media (max-width: 959px) {
+      #page-six #djent-large-text {
+        font-size: 7em; } }
+  #page-six h1 {
+    color: #2B3A42;
+    font-weight: 300; }

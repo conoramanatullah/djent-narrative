@@ -1,1 +1,53 @@
-<h1>Page 3</h1>
+<md-content id="page-three" layout-padding layout-wrap ng-controller="pageThreeController">
+
+    <h1>What exactly is djent?</h1>
+    <h2>Click each button to learn more.</h2>
+    <md-button class="md-raised" ng-click="genre = !genre" >Genre</md-button>
+    <md-button class="md-raised" ng-click="style = !style" >Style</md-button>
+    <md-button class="md-raised" ng-click="info = !info"   >IDK?</md-button>
+
+
+    <div id="info" ng-if="info" class="animated fadeIn">
+      <h2> Djent - pronounced "duh-jent"</h2>
+      <p class="description">
+        Djent is a genre of metal
+        that emerged in the late 2010s
+        onto the popular scene. Some
+        people don't consider this a
+        genre, they consider it a style.
+        It honestly has a bit of both.
+      </p>
+      <p class="description">
+        Common musical features include
+        low tuned guitars and bouncy rhythms.
+      </p>
+      <p class="description">
+        Bands like Periphery and Meshuggah
+        paved the way for the sound of djent.
+      </p>
+    </div>
+
+    <div id="genre" ng-if="genre" class="animated fadeIn">
+      <h2>Djent is a genre</h2>
+      <p class="description">
+        Djent can be described as a genre in
+        many ways. The go-to explanation is
+        that it is an entire community of
+        musicians that share similar musical
+        features. This can imply that djent is
+        a full-blown genre like pop or punk.
+      </p>
+    </div>
+
+    <div id="style" ng-if="style" class="animated fadeIn">
+      <h2>Djent is a style</h2>
+      <p class="description">
+        Djent can be considered a style because
+        it is so varied in how musicians approach it.
+        The style mainly consists of dropped tuned
+        guitars, explosive drums, powerful vocals and
+        musical virtuosity all around.
+      </p>
+    </div>
+
+</md-content>

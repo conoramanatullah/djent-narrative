@@ -16,12 +16,12 @@
 
       <!-- Large and XL only,  -->
 
-      <div ng-click="startDjent()" id="djent-start-button" md-ink-ripple="#FFFFFF">
+      <div ng-click="startDjent()" id="djent-start-button" md-ink-ripple="#FFFFFF" class="">
         {{start}} <i class='material-icons' ng-if="arrow ">forward</i>
       </div>
 
-      <div id="tools-bar" open-tools>
-        <div class="header md-whiteframe-z2" layout="row" md-ink-ripple="#FFFFFF">
+      <div id="tools-bar" open-tools >
+        <div  class="header md-whiteframe-z2" layout="row" md-ink-ripple="#FFFFFF">
           <span class="text">
             ABOUT
           </span>
@@ -30,6 +30,10 @@
         </div>
         <div class="content">
           <div class="">
+            Built for FWD Project 1
+            <p>
+              by Conor Amanatullah
+            </p>
 
           </div>
         </div>
@@ -37,50 +41,46 @@
 
 
     </div>
-    <div class="djent-right md-whiteframe-z4" flex>
+    <div id="front-page" class="djent-right md-whiteframe-z4" flex ng-if="!content">
 
-      <div id="page1" ng-if="pageIndex == 1" class="djent-text-center fade" >
-        <div id="djent-large-text">
-          djent
+      <div id="page1" ng-if="pageIndex == 1" class="djent-text-center" >
+        <div id="djent-large-text" ng-click="inc($event)">
+          {{ text }}
         </div>
         <div id="djent-small-text">
-          a history of the genre
+          A brief overview.
         </div>
-      </div>
-
-      <div id="page2"  ng-if="pageIndex == 2" >
-        <h1>Overview</h1>
-        <!-- Grid -->
-        <ng-include src="'templates/page2.html'"></ng-include>
-      </div>
-
-      <div id="page3"  ng-if="pageIndex == 3" >
-        <h1>Meshuggah</h1>
-        <ng-include src="'templates/page3.html'"></ng-include>
-      </div>
-
-      <div id="page4"  ng-if="pageIndex == 4" >
-        <h1>Periphery</h1>
-        <ng-include src="'templates/page4.html'"></ng-include>
-      </div>
-
-      <div id="page5"  ng-if="pageIndex == 5" >
-        <h1>After the Burial</h1>
-        <ng-include src="'templates/page5.html'"></ng-include>
-      </div>
-
-      <div id="page6"  ng-if="pageIndex == 6" >
-        <h1>Other Examples</h1>
-        <ng-include src="'templates/page6.html'"></ng-include>
-      </div>
-
-      <div id="page7"  ng-if="pageIndex == 7" >
-        <h1>Last page</h1>
-        <ng-include src="'templates/page7.html'"></ng-include>
       </div>
 
     </div>
+    <div class="djent-right-dark md-whiteframe-z4" flex ng-if="content">
+      <div id="page2"  ng-if="pageIndex == 2" class="">
+        <ng-include src="'templates/page2.html'"></ng-include>
+      </div>
+
+      <div id="page3"  ng-if="pageIndex == 3" class="">
+        <ng-include src="'templates/page3.html'"></ng-include>
+      </div>
+
+      <div id="page4"  ng-if="pageIndex == 4" class="">
+        <ng-include src="'templates/page4.html'"></ng-include>
+      </div>
+
+      <div id="page5"  ng-if="pageIndex == 5" class="">
+        <ng-include src="'templates/page5.html'"></ng-include>
+      </div>
+
+      <div id="page6"  ng-if="pageIndex == 6" class="">
+        <ng-include src="'templates/page6.html'"></ng-include>
+      </div>
+
+      <div id="page7"  ng-if="pageIndex == 7" class="">
+        <ng-include src="'templates/page7.html'"></ng-include>
+      </div>
+    </div>
   </div>
+
+
 
   <script src="js/main.min.js"></script>
 

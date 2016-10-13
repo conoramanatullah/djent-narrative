@@ -1,1 +1,27 @@
-<h1>Page 4</h1>
+<md-content id="page-four" layout-padding layout-wrap ng-controller="pageFourController">
+    <h1>Lets talk guitars.</h1>
+
+    <h2>Guitars are the key to creating djent.</h2>
+    <h2>Click each guitar type to learn more.</h2>
+    <md-grid-list md-cols="2" md-cols-xs="1" md-cols-sm="1"  md-row-height="2:1">
+        <md-grid-tile ng-click="seven = true">
+          <img src="images/ibanez7.png" alt="" ng-if="!seven"/>
+          <p class="animated fadeIn" ng-if="seven">Popularized by bands like Periphery and Tesseract,
+                                                  the seven string guitar has been extremely influential
+                                                  in the metal music scene. It allows for lower tunings
+                                                  and a more full-range sound.
+                                                </p>
+
+        </md-grid-tile>
+        <md-grid-tile ng-click="eight = true">
+          <img src="images/ibanez8.png" ng-if="!eight" />
+          <p class="animated fadeIn" ng-if="eight">
+            The eight string was made popular by Swedish djent-pioneers
+            Meshuggah. Their use of much lower guitar range became popular
+            for the crushing sounds it is able to produce.
+          </p>
+
+        </md-grid-tile>
+    </md-grid-list>
+
+</md-content>
